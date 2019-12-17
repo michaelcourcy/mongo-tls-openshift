@@ -7,7 +7,7 @@ I found this tricky and should be shared. This is just an example deployment the
 
 We use the internal PKI of openshift : [openshift-service-serving-signer](https://docs.openshift.com/container-platform/3.11/dev_guide/secrets.html#service-serving-certificate-secrets).
 
-In 01_mongodb-service we add the annotation `service.alpha.openshift.io/serving-cert-secret-name: nodejs-tls`
+In 02_mongodb-service we add the annotation `service.alpha.openshift.io/serving-cert-secret-name: nodejs-tls`
 
 That creates a tls secret (mongodb-tls) with a CN and SAN related to the exposed service: 
 
