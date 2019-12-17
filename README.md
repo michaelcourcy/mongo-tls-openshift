@@ -1,4 +1,4 @@
-# mongo-tls-openshift
+# Mongo-tls-openshift
 This little project show how to adapt the official mongo image in openshift to run with tls mode. 
 
 I found this tricky and should be shared. This is just an example deployment there is probably other way. Mongodb operator are anyway superseding this approach but it's still useful if you want to go without operator. 
@@ -85,7 +85,7 @@ We see that we have a certificate signed for 2 years :
 The CN and the SAN is properly defined : 
 
 ```
-        Subject: CN=nodejs.nodejs-tls.svc
+        Subject: CN=mongodb.my-project.svc
 
         ....
 
