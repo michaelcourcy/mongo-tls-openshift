@@ -34,19 +34,19 @@ spec:
           valueFrom:
             secretKeyRef:
               key: database-user
-              name: nodejs
+              name: mongodb
         - name: MONGODB_PASSWORD
           valueFrom:
             secretKeyRef:
               key: database-password
-              name: nodejs
+              name: mongodb
         - name: MONGODB_DATABASE
           value: sampledb
         - name: MONGODB_ADMIN_PASSWORD
           valueFrom:
             secretKeyRef:
               key: database-admin-password
-              name: nodejs
+              name: mongodb
         image: ' '
         livenessProbe:
           initialDelaySeconds: 30
